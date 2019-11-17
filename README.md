@@ -1,24 +1,44 @@
-# README
+# ActiveRecord To Do List на Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Создать задачу
 
-Things you may want to cover:
+      Task.add('Ваш текст')
 
-* Ruby version
+## Показать все задачи
 
-* System dependencies
+      Task.allTasks
 
-* Configuration
+## Показать незавершённые задачи
 
-* Database creation
+      Task.unfinishedTasks
 
-* Database initialization
+## Показать завершённые задачи
 
-* How to run the test suite
+      Task.finishedTasks
 
-* Services (job queues, cache servers, search engines, etc.)
+## Отредактировать текст задачи
 
-* Deployment instructions
+      Task.updateTask(id_задачи, 'новый текст')
 
-* ...
+## Сменить статус задачи
+
+      Task.check(id_задачи)
+
+## Удалить определённую задачу
+
+      Task.deleteTask(id_задачи)
+
+## Удалить все задачи
+
+      Task.deleteAll
+
+## Удалить завершённые задачи
+
+      Task.deleteFinished
+
+## Удалить незавершённые задачи
+
+      Task.deleteUnfinished
+
+
+
