@@ -1,5 +1,4 @@
 class Task < ApplicationRecord
-
   scope :unfinished, -> { where(done: false) }
   scope :finished, -> { where(done: true) }
   default_scope { order(created_at: :asc) }
