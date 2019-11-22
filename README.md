@@ -6,39 +6,43 @@
 
 ## Показать все задачи
 
-      Task.allTasks
+      Task.all
 
 ## Показать незавершённые задачи
 
-      Task.unfinishedTasks
+      Task.unfinished
 
 ## Показать завершённые задачи
 
-      Task.finishedTasks
+      Task.finished
 
 ## Отредактировать текст задачи
 
-      Task.updateTask(id_задачи, 'новый текст')
+      Task.edit(id_задачи, 'новый текст')
 
-## Сменить статус задачи
+## Сменить статус задачи на true (выполнено)
 
-      Task.check(id_задачи)
+      Task.finish(id_задачи)
+
+## Сменить статус задачи на false (не выполнено)
+
+      Task.unfinish(id_задачи)
 
 ## Удалить определённую задачу
 
-      Task.deleteTask(id_задачи)
+      Task.del(id_задачи)
 
 ## Удалить все задачи
 
-      Task.deleteAll
+      Task.delete_all
 
 ## Удалить завершённые задачи
 
-      Task.deleteFinished
+      Task.delete_finished
 
 ## Удалить незавершённые задачи
 
-      Task.deleteUnfinished
+      Task.delete_unfinished
 
 
 
